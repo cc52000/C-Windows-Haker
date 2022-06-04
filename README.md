@@ -48,5 +48,7 @@ C1189 #error: Building MFC application with /MD[d] (CRT dll version) requires MF
     1. 一台电脑只能运行一个Server。
     2. 一个Server程序同时只能有一个Client在连接，否则可能会出错！
 
-我的 CSDN：Lo问我为什么看星星
-转载请说明出处！
+ **我的 CSDN：Lo问我为什么看星星
+转载请说明出处！** 
+
+都看到这了，就给我一颗小星星吧~
