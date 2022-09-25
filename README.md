@@ -29,26 +29,14 @@ Server功能：
     6. 退出控制
         和Client断开连接。
 
-编译程序我使用的是VS2022，要安装好MFC，如果出现
-C1189 #error: Building MFC application with /MD[d] (CRT dll version) requires MFC shared dll version. Please #define _AFXDLL or do not use /MD[d] Server C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\atlmfc\include\afx.h 24
-类似这样的报错，就去修改afx.h，
-双击报错信息进入afx.h，
-找到
-#ifdef _DLL
-#ifndef _AFXDLL
-#error Building MFC application with /MD[d] (CRT dll version) requires MFC shared dll version. Please #define _AFXDLL or do not use /MD[d]
-#endif
-#endif
-我的是在第22 ~ 26行
-然后在他们前面加一行
-#define _AFXDLL
-就好了！记得先保存，然后再次生成。
+编译程序我使用的是VS2022，要安装好MFC。
 
 程序缺点：
-    1. 一台电脑只能运行一个Server。
-    2. 一个Server程序同时只能有一个Client在连接，否则可能会出错！
+    1. 一个Server同时只能控制一个Client。
+    2. 一个Client程序同时只能有一个Server在连接。
 
  **我的 CSDN：Lo问我为什么看星星
 转载请说明出处！** 
 
 都看到这了，就给我一颗小星星吧~
+作者邮箱：534086753@qq.com
